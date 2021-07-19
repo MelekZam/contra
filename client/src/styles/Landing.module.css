@@ -1,0 +1,124 @@
+@import "./vars.css";
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+.view {
+  min-height: 100vh;
+  background-color: var(--color-primary);
+  margin: 0;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 30px;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+}
+
+.container .text {
+  min-width: 30%;
+  min-height: 35vh;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Arvo", sans-serif;
+}
+
+.container .text h1 {
+  letter-spacing: 0.1cm;
+  color: #ffffff;
+}
+
+.container .text p {
+  font-style: italic;
+  color: #dbd4d4;
+  font-size: 15px;
+}
+
+.about {
+  margin-top: 100px;
+  min-height: 60vh;
+  background: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact {
+  min-height: 75vh;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Arvo", sans-serif;
+}
+
+.contact .title h1 {
+  margin-bottom: 15px;
+}
+
+.contactContent {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mail {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 600px;
+}
+
+.footer {
+  height: 50px;
+  background: var(--color-secondary);
+  color: #dbd4d4;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1350px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .text {
+    align-items: center;
+    text-align: center;
+  }
+  .contact {
+    min-height: 120vh;
+  }
+  .contactContent {
+    flex-direction: column;
+    min-height: 800px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  .about {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container .text {
+    height: 60vh;
+  }
+  .contact {
+    min-height: 150vh;
+  }
+}

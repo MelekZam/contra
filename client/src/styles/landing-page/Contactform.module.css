@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.group {
+  position: relative;
+  margin: 20px 0;
+}
+.textarea {
+  resize: none;
+}
+.input,
+.textarea {
+  background: none;
+  color: #dbd4d4;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ffffff;
+}
+.input:focus,
+.textarea:focus {
+  outline: none;
+}
+.input:focus ~ label,
+.textarea:focus ~ label,
+.input:valid ~ label,
+.textarea:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: var(--color-third);
+}
+.input:focus ~ .bar:before,
+.textarea:focus ~ .bar:before {
+  width: 320px;
+}
+.input[type="password"] {
+  letter-spacing: 0.3em;
+}
+.label {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+.bar:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: var(--color-third);
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+.btn {
+  background: #fff;
+  color: #959595;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+.btn:hover {
+  color: #8b8b8b;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+.btn.btnlink {
+  background: var(--color-third);
+  color: #ffffff;
+}
+.btn.btnlink:hover {
+  background: var(--color-third);
+  color: #ffffff;
+}
+.btn.btnsubmit {
+  background: var(--color-third);
+  color: #ffffff;
+}
+.btn.btnsubmit:hover {
+  background: var(--color-third);
+  color: #ffffff;
+}
+.btnbox {
+  text-align: center;
+  margin: 10px 0;
+}
+
+@media (max-width: 900px) {
+  .form {
+    height: 200px;
+    width: 200px;
+  }
+  .group {
+    margin: 10px;
+    width: 200px;
+  }
+  .input,
+  .textarea,
+  .bar {
+    width: 200px;
+  }
+  .input:focus ~ .bar:before,
+  .textarea:focus ~ .bar:before {
+    width: 200px;
+  }
+  .textarea .btnbox {
+    margin: 10px;
+  }
+}

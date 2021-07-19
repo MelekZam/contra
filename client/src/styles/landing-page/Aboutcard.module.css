@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+.card {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 400px;
+  width: 300px;
+  align-items: center;
+  margin: 10px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card:hover {
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 4px 30px #1b63b080;
+}
+
+.card img {
+  width: 60%;
+  height: auto;
+}
+
+.card h1,
+.card p {
+  color: rgb(0, 0, 0);
+  font-family: "Arvo", sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+}
