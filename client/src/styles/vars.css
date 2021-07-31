@@ -3,3 +3,11 @@
   --color-secondary: #0e3764;
   --color-third: #1b62b0;
 }
+
+/* option 2: */
+
+/* :root {
+  --color-primary: #202442;
+  --color-secondary: #33385a;
+  --color-third: #1b62b0;
+} */
